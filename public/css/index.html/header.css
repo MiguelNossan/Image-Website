@@ -1,0 +1,30 @@
+header {
+    z-index: 5;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100dvw;
+    height: 60px;
+    background-color: rgb(66, 64, 64);
+    border-radius: 0 0 2em 2em;
+    left: 0;
+    top: 0;
+}
+
+header button {
+    margin: auto 10px;
+    width: 90px;
+    height: 50px;
+    background-color: rgb(121, 117, 136);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.loggedInHeaderBtn {
+    display: none;
+}
+
+#goToProfilePage {
+    text-decoration: line-through black solid 3px;
+}

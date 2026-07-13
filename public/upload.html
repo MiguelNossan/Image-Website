@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/upload.html/style.css">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="dropZone">Click or Drag & Drop Image</div>
+    <input type="file" id="fileInput" accept="image/*">
+
+    <div id="imagePersonalization">
+        <h2>Image Tags</h2>
+        <label>
+            Separate tags with commas. Use hyphens for multi-word tags. <br>
+            <input id="tagInput" type="text" maxlength="40">
+        </label>
+        <button id="upload">upload</button> <button id="cancel">cancel</button>
+    </div>
+    <div id="gallery">
+
+    </div>
+
+    <div id="areYouSureDiv">
+        <h2>Are you sure?</h2>
+        <div>
+            <button id="confirmYes">Yes</button> <button id="confirmNo">No</button>
+        </div>
+    </div>
+
+    <script src="js/upload.html/logic.js"></script>
+</body>
+</html>

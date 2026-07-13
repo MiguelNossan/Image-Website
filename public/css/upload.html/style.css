@@ -1,0 +1,171 @@
+body {
+    background: linear-gradient(to bottom right, rgb(90, 102, 114), rgb(235, 231, 231));
+    min-height: 100dvh;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#dropZone {
+    width: clamp(10dvw, 300px, 80dvw);
+    height: 200px;
+    border-radius: 1em;
+    border: 2px dashed  white;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    color: white;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#dropZone.dragover {
+    border-color: #00ff08;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+#fileInput {
+    display: none;
+}
+
+#gallery {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.uploadedImgReview {
+    background-color: rgb(92, 91, 91);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    align-items: center;
+    font-size: 20px;
+    width: 90dvw;
+    max-width: 1000px;
+    height: 120px;
+    border: 3px solid rgb(71, 71, 71);
+    border-radius: 30px;
+    color: white;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow:
+        0px 0px 3px #000,
+        0px 0px 5px #000,
+        0px 0px 10px #000,
+        0px 0px 15px #000;
+}
+
+.uploadedImgReview span {
+    font-size: 35px;
+}
+
+.uploadedImgContainer {
+    height: 100px;
+    width: 100px;
+}
+
+.uploadedImg {
+    display: flex;
+    height: 100px; 
+    width: auto;
+    margin: auto;
+    max-width: 100px;
+    object-fit: scale-down;
+    border-radius: 10px 
+}
+
+.deleteBtn {
+    width: 50px;
+    height: 50px;
+
+}
+
+#areYouSureDiv {
+    position: fixed;
+    font-size: 22px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 280px;
+    max-width: 90dvw;
+    height: 180px;
+    background-color: rgb(66, 64, 64);
+    border: 4px solid black;
+    border-radius: 15px;
+    text-shadow:
+        0px 0px 3px #000,
+        0px 0px 5px #000,
+        0px 0px 10px #000,
+        0px 0px 15px #000;
+
+    text-align: center;
+    align-content: center;
+}
+
+#areYouSureDiv h2 {
+    margin: 0 0 5px 0;
+
+}
+
+#areYouSureDiv button {
+    font-size: 25px;
+    background-color: rgb(92, 91, 91);
+    color: white;
+    text-shadow:
+        0px 0px 3px #000,
+        0px 0px 5px #000,
+        0px 0px 10px #000,
+        0px 0px 15px #000,
+        0px 0px 20px #000;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#imagePersonalization {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    max-width: 85dvw;
+    height: 170px;
+    padding: 0 5px;
+    z-index: 3;
+    font-size: 15px;
+    background-color: rgb(66, 64, 64);
+    text-align: center;
+    align-content: center;
+    border: 4px solid black;
+    border-radius: 15px;
+}
+
+#imagePersonalization h2 {
+    font-size: 22px;
+    margin: 0 0 5px 0;
+}
+
+#imagePersonalization input {
+    font-size: 30px;
+    max-width: 90%;
+}
+
+#imagePersonalization button {
+    font-size: 20px;
+    background-color: rgb(92, 91, 91);
+    color: white;
+    margin-top: 5px;
+}
